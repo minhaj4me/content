@@ -744,7 +744,8 @@ For characters not listed in the table, a preceding backslash is ignored, but th
 You can insert a quotation mark inside a string by preceding it with a backslash. This is known as _escaping_ the quotation mark. For example:
 
 ```js
-var quote = "He read \"The Cremation of Sam McGee\" by R.W. Service.";
+var quote = //I made a change here from (" to ' in the start of He because there's " before He.) 
+'He read \"The Cremation of Sam McGee\" by R.W. Service.";
 console.log(quote);
 ```
 
